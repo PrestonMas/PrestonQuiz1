@@ -61,6 +61,51 @@ const quizQuestions = [
       { text: "Green", correct: true },
     ],
   },
+  {
+    question: "Where did Preston go to highschool?",
+    answers: [
+      { text: "MTHS", correct: true },
+      { text: "SBHS", correct: false },
+      { text: "WWPS", correct: false },
+      { text: "EBHS", correct: false },
+    ],
+  },
+  {
+    question: "What is Preston's ethnicity?",
+    answers: [
+      { text: "Vietnamese", correct: false },
+      { text: "Chinese", correct: false },
+      { text: "Thai", correct: false },
+      { text: "Filipino", correct: true },
+    ],
+  },
+  {
+    question: "What is Preston's favorite sport?",
+    answers: [
+      { text: "Tennis", correct: false },
+      { text: "Volleyball", correct: false },
+      { text: "Basketball", correct: true },
+      { text: "Soccer", correct: false },
+    ],
+  },
+  {
+    question: "Which of the following is a name of his hometown friends?",
+    answers: [
+      { text: "Shawn", correct: false },
+      { text: "Aryan", correct: false },
+      { text: "Brian", correct: false },
+      { text: "All of the above", correct: true },
+    ],
+  },
+  {
+    question: "What is Preston's peak rank in Valorant?",
+    answers: [
+      { text: "Diamond 3", correct: false },
+      { text: "Immortal 2", correct: true },
+      { text: "Immortal 1", correct: false },
+      { text: "Ascendant 3", correct: false },
+    ],
+  },
 ];
 
 // QUIZ STATE VARS
