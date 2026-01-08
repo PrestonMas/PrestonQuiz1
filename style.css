@@ -88,9 +88,18 @@ body {
     transition: all 0.3s ease;
 }
 
-.answer-button:hover {
+.answer-button:active {
     background-color: #C3E7BD;
     border-color: #A6DB9D;
+}
+
+.answer-button:focus {
+    outline: none;
+}
+
+.answer-button:focus-visible {
+    outline: 3px solid #88CF7D;
+    outline-offset: 2px;
 }
 
 .answer-button.correct{
@@ -156,8 +165,19 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+button:active {
     background-color: #6BC35D;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .answer-button:hover {
+        background-color: #C3E7BD;
+        border-color: #A6DB9D;
+    }
+
+    button:hover {
+        background-color: #6BC35D;
+    }
 }
 
 /* RESPONSIVE DESIGN */
