@@ -208,9 +208,29 @@ function showResult() {
     switch (true){
         case percentage == 100:
             resultMessage.textContent = "Perfect! You know Preston very well!";
+            confetti({
+              particleCount: 100,
+              spread: 70,
+              origin: { x: 0.95, y: 0.9 },
+            });
+            confetti({
+              particleCount: 100,
+              spread: 70,
+              origin: { x: 0.05, y: 0.9 },
+            });
             break;
         case percentage >= 80:
             resultMessage.textContent = "Nice! You know a bit about Preston.";
+            confetti({
+              particleCount: 100,
+              spread: 70,
+              origin: { x: 0.95, y: 0.9 },
+            });
+            confetti({
+              particleCount: 100,
+              spread: 70,
+              origin: { x: 0.05, y: 0.9 },
+            });
             break;
         case percentage >= 60:
             resultMessage.textContent = "Good try! You have a lot to learn about Preston.";
