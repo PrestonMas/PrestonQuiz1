@@ -14,6 +14,10 @@ const resultMessage = document.getElementById("result-message");
 const restartButton = document.getElementById("restart-button");
 const progressBar = document.getElementById("progress");
 
+const hooraySound = new Audio("Sounds/fnaf-hooray.mp3");
+const boWompSound = new Audio("Sounds/bo-womp.mp3");
+const downerNoiseSound = new Audio("Sounds/downer_noise.mp3");
+
 // Quiz questions
 const quizQuestions = [
   {
@@ -207,6 +211,7 @@ function showResult() {
 
     switch (true){
         case percentage == 100:
+            hooraySound.play();
             resultMessage.textContent = "Perfect! You know Preston very well!";
             confetti({
               particleCount: 100,
@@ -220,6 +225,7 @@ function showResult() {
             });
             break;
         case percentage >= 80:
+            hooraySound.play();
             resultMessage.textContent = "Nice! You know a bit about Preston.";
             confetti({
               particleCount: 100,
@@ -236,9 +242,11 @@ function showResult() {
             resultMessage.textContent = "Good try! You have a lot to learn about Preston.";
             break;
         case percentage >= 40:
+            boWompSound.play();
             resultMessage.textContent = "Oof. Ask Preston anything for help!";
             break;
         default:
+            downerNoiseSound.play();
             resultMessage.textContent = "You're either a stranger or a bad friend to Preston.";
     }
 }
